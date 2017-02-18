@@ -1,0 +1,112 @@
+//- Navs
+
+mixin ul-nav
+  ul.nav
+    li.nav-item
+      a.nav-link.active(href='#') Active
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link.disabled(href='#') Disabled
+
+mixin nav-nav
+  nav.nav
+    a.nav-link.active(href='#') Active
+    a.nav-link(href='#') Link
+    a.nav-link(href='#') Link
+    a.nav-link.disabled(href='#') Disabled
+
+mixin nav-flex-column
+  ul.nav.flex-column
+    li.nav-item
+      a.nav-link.active(href='#') Active
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link.disabled(href='#') Disabled
+
+mixin nav-tabs
+  ul.nav.nav-tabs
+    li.nav-item
+      a.nav-link.active(href='#') Active
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link.disabled(href='#') Disabled
+
+mixin nav-tabs-2
+  ul.nav.nav-tabs
+    li.nav-item
+      a.nav-link.active(href='#') Active
+    li.nav-item.dropdown
+      a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
+      .dropdown-menu
+        a.dropdown-item(href='#') Action
+        a.dropdown-item(href='#') Another action
+        a.dropdown-item(href='#') Something else here
+        .dropdown-divider
+        a.dropdown-item(href='#') Separated link
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link.disabled(href='#') Disabled
+
+mixin nav-pills
+  ul.nav.nav-pills
+    li.nav-item
+      a.nav-link.active(href='#') Active
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link.disabled(href='#') Disabled
+
+mixin nav-pills-2
+  ul.nav.nav-pills
+    li.nav-item
+      a.nav-link.active(href='#') Active
+    li.nav-item.dropdown
+      a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Dropdown
+      .dropdown-menu
+        a.dropdown-item(href='#') Action
+        a.dropdown-item(href='#') Another action
+        a.dropdown-item(href='#') Something else here
+        .dropdown-divider
+        a.dropdown-item(href='#') Separated link
+    li.nav-item
+      a.nav-link(href='#') Link
+    li.nav-item
+      a.nav-link.disabled(href='#') Disabled
+
+mixin nav-tabs-javascript
+  ul#myTab.nav.nav-tabs(role='tablist')
+    li.nav-item
+      a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-expanded='true') Home
+    li.nav-item
+      a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile') Profile
+    li.nav-item.dropdown
+      a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu
+        a#dropdown1-tab.dropdown-item(href='#dropdown1', role='tab', data-toggle='tab', aria-controls='dropdown1') @fat
+        a#dropdown2-tab.dropdown-item(href='#dropdown2', role='tab', data-toggle='tab', aria-controls='dropdown2') @mdo
+  #myTabContent.tab-content
+    #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+      p
+        | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+    #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+      p
+        | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+    #dropdown1.tab-pane.fade(role='tabpanel', aria-labelledby='dropdown1-tab')
+      p
+        | Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+    #dropdown2.tab-pane.fade(role='tabpanel', aria-labelledby='dropdown2-tab')
+      p
+        | Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.

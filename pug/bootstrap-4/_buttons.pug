@@ -1,0 +1,199 @@
+//- Buttons
+
+mixin buttons
+  // Provides extra visual weight and identifies the primary action in a set of buttons
+  button.btn.btn-primary(type='button') Primary
+  // Secondary, outline button
+  button.btn.btn-secondary(type='button') Secondary
+  // Indicates a successful or positive action
+  button.btn.btn-success(type='button') Success
+  // Contextual button for informational alert messages
+  button.btn.btn-info(type='button') Info
+  // Indicates caution should be taken with this action
+  button.btn.btn-warning(type='button') Warning
+  // Indicates a dangerous or potentially negative action
+  button.btn.btn-danger(type='button') Danger
+  // Deemphasize a button by making it look like a link while maintaining button behavior
+  button.btn.btn-link(type='button') Link
+
+mixin button-tags
+  a.btn.btn-primary(href='#', role='button') Link
+  button.btn.btn-primary(type='submit') Button
+  input.btn.btn-primary(value='Input', type='button')
+  input.btn.btn-primary(value='Submit', type='submit')
+  input.btn.btn-primary(value='Reset', type='reset')
+
+mixin outline-buttons
+  button.btn.btn-outline-primary(type='button') Primary
+  button.btn.btn-outline-secondary(type='button') Secondary
+  button.btn.btn-outline-success(type='button') Success
+  button.btn.btn-outline-info(type='button') Info
+  button.btn.btn-outline-warning(type='button') Warning
+  button.btn.btn-outline-danger(type='button') Danger
+
+mixin button-sizing
+  p
+    button.btn.btn-primary.btn-lg(type='button') Large button
+    button.btn.btn-secondary.btn-lg(type='button') Large button
+  p
+    button.btn.btn-primary.btn-sm(type='button') Small button
+    button.btn.btn-secondary.btn-sm(type='button') Small button
+
+mixin button-blocks
+  button.btn.btn-primary.btn-lg.btn-block(type='button') Block level button
+  button.btn.btn-secondary.btn-lg.btn-block(type='button') Block level button
+
+mixin button-active-disabled
+  a.btn.btn-primary.active(href='#', role='button', aria-pressed='true') Primary link
+  = ' '
+  a.btn.btn-secondary.active(href='#', role='button', aria-pressed='true') Link
+  = ' '
+  button.btn.btn-primary(type='button', disabled='') Primary button
+  = ' '
+  button.btn.btn-secondary(type='button', disabled='') Secondary button
+  = ' '
+
+mixin button-active-disabled-2
+  a.btn.btn-primary.btn-lg.active(href='#', role='button', aria-pressed='true') Primary link
+  = ' '
+  a.btn.btn-secondary.btn-lg.active(href='#', role='button', aria-pressed='true') Link
+  = ' '
+  a.btn.btn-primary.btn-lg.disabled(href='#', role='button', aria-disabled='true') Primary link
+  = ' '
+  a.btn.btn-secondary.btn-lg.disabled(href='#', role='button', aria-disabled='true') Link
+
+mixin button-toggle-states
+  button.btn.btn-primary(type='button', data-toggle='button', aria-pressed='false', autocomplete='off')
+    | Single toggle
+
+mixin checkbox-buttons
+  .btn-group(data-toggle='buttons')
+    label.btn.btn-primary.active
+      input(checked='', autocomplete='off', type='checkbox')
+      |  Checkbox 1 (pre-checked)
+    label.btn.btn-primary
+      input(autocomplete='off', type='checkbox')
+      |  Checkbox 2
+    label.btn.btn-primary
+      input(autocomplete='off', type='checkbox')
+      |  Checkbox 3
+
+mixin radio-buttons
+  .btn-group(data-toggle='buttons')
+    label.btn.btn-primary.active
+      input#option1(name='options', autocomplete='off', checked='', type='radio')
+      |  Radio 1 (preselected)
+    label.btn.btn-primary
+      input#option2(name='options', autocomplete='off', type='radio')
+      |  Radio 2
+    label.btn.btn-primary
+      input#option3(name='options', autocomplete='off', type='radio')
+      |  Radio 3
+
+mixin button-group
+  .btn-group(role='group', aria-label='Basic example')
+    button.btn.btn-secondary(type='button') Left
+    button.btn.btn-secondary(type='button') Middle
+    button.btn.btn-secondary(type='button') Right
+
+mixin button-toolbar
+  .btn-toolbar(role='toolbar', aria-label='Toolbar with button groups')
+    .btn-group.mr-2(role='group', aria-label='First group')
+      button.btn.btn-secondary(type='button') 1
+      button.btn.btn-secondary(type='button') 2
+      button.btn.btn-secondary(type='button') 3
+      button.btn.btn-secondary(type='button') 4
+    .btn-group.mr-2(role='group', aria-label='Second group')
+      button.btn.btn-secondary(type='button') 5
+      button.btn.btn-secondary(type='button') 6
+      button.btn.btn-secondary(type='button') 7
+    .btn-group(role='group', aria-label='Third group')
+      button.btn.btn-secondary(type='button') 8
+
+mixin button-toolbar-2
+  .btn-toolbar.mb-3(role='toolbar', aria-label='Toolbar with button groups')
+    .btn-group.mr-2(role='group', aria-label='First group')
+      button.btn.btn-secondary(type='button') 1
+      button.btn.btn-secondary(type='button') 2
+      button.btn.btn-secondary(type='button') 3
+      button.btn.btn-secondary(type='button') 4
+    .input-group
+      span#btnGroupAddon.input-group-addon @
+      input.form-control(placeholder='Input group example', aria-describedby='btnGroupAddon', type='text')
+  .btn-toolbar.justify-content-between(role='toolbar', aria-label='Toolbar with button groups')
+    .btn-toolbar.mb-3(role='toolbar', aria-label='Toolbar with button groups')
+      .btn-group(role='group', aria-label='First group')
+        button.btn.btn-secondary(type='button') 1
+        button.btn.btn-secondary(type='button') 2
+        button.btn.btn-secondary(type='button') 3
+        button.btn.btn-secondary(type='button') 4
+    .input-group
+      span#btnGroupAddon2.input-group-addon @
+      input.form-control(placeholder='Input group example', aria-describedby='btnGroupAddon2', type='text')
+
+mixin button-group-sizing
+  .btn-group.btn-group-lg(role='group', aria-label='Large button group')
+    button.btn.btn-secondary(type='button') Left
+    button.btn.btn-secondary(type='button') Middle
+    button.btn.btn-secondary(type='button') Right
+  br
+  .btn-group(role='group', aria-label='Default button group')
+    button.btn.btn-secondary(type='button') Left
+    button.btn.btn-secondary(type='button') Middle
+    button.btn.btn-secondary(type='button') Right
+  br
+  .btn-group.btn-group-sm(role='group', aria-label='Small button group')
+    button.btn.btn-secondary(type='button') Left
+    button.btn.btn-secondary(type='button') Middle
+    button.btn.btn-secondary(type='button') Right
+
+mixin button-group-nesting
+  .btn-group(role='group', aria-label='Button group with nested dropdown')
+    button.btn.btn-secondary(type='button') 1
+    button.btn.btn-secondary(type='button') 2
+  .btn-group(role='group')
+    button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      | Dropdown
+    .dropdown-menu(aria-labelledby='btnGroupDrop1')
+      a.dropdown-item(href='#') Dropdown link
+      a.dropdown-item(href='#') Dropdown link
+
+mixin button-group-vertical
+  .btn-group-vertical(role='group', aria-label='Vertical button group')
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+
+mixin button-group-vertical-2
+  .btn-group-vertical(role='group', aria-label='Vertical button group')
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    .btn-group(role='group')
+      button#btnGroupVerticalDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupVerticalDrop1')
+        a.dropdown-item(href='#') Dropdown link
+        a.dropdown-item(href='#') Dropdown link
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    .btn-group(role='group')
+      button#btnGroupVerticalDrop2.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupVerticalDrop2')
+        a.dropdown-item(href='#') Dropdown link
+        a.dropdown-item(href='#') Dropdown link
+    .btn-group(role='group')
+      button#btnGroupVerticalDrop3.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupVerticalDrop3')
+        a.dropdown-item(href='#') Dropdown link
+        a.dropdown-item(href='#') Dropdown link
+    .btn-group(role='group')
+      button#btnGroupVerticalDrop4.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupVerticalDrop4')
+        a.dropdown-item(href='#') Dropdown link
+        a.dropdown-item(href='#') Dropdown link

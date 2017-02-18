@@ -1,0 +1,106 @@
+//- Navbar
+
+mixin navbar
+  nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+    button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarExample01', aria-controls='navbarExample01', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    a.navbar-brand(href='#') Navbar
+    #navbarExample01.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Link
+        li.nav-item
+          a.nav-link.disabled(href='#') Disabled
+      form.form-inline.my-2.my-lg-0
+        input.form-control.mr-sm-2(placeholder='Search', type='text')
+        button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+mixin navbar-with-dropdown
+  nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+    button.navbar-toggler.navbar-toggler-right.collapsed(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    a.navbar-brand(href='#') Navbar
+    #navbarNavDropdown.navbar-collapse.collapse(aria-expanded='false', style='')
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Features
+        li.nav-item
+          a.nav-link(href='#') Pricing
+        li.nav-item.dropdown
+          a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='http://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | Dropdown link
+          .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+            a.dropdown-item(href='#') Action
+            a.dropdown-item(href='#') Another action
+            a.dropdown-item(href='#') Something else here
+
+mixin navbar-color-scheme-1
+  nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse
+    button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarColor01', aria-controls='navbarColor01', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    a.navbar-brand(href='#') Navbar
+    #navbarColor01.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Features
+        li.nav-item
+          a.nav-link(href='#') Pricing
+        li.nav-item
+          a.nav-link(href='#') About
+      form.form-inline
+        input.form-control.mr-sm-2(placeholder='Search', type='text')
+        button.btn.btn-outline-info.my-2.my-sm-0(type='submit') Search
+
+mixin navbar-color-scheme-2
+  nav.navbar.navbar-toggleable-md.navbar-inverse.bg-primary
+    button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarColor02', aria-controls='navbarColor02', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    a.navbar-brand(href='#') Navbar
+    #navbarColor02.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Features
+        li.nav-item
+          a.nav-link(href='#') Pricing
+        li.nav-item
+          a.nav-link(href='#') About
+      form.form-inline
+        input.form-control.mr-sm-2(placeholder='Search', type='text')
+        button.btn.btn-outline-secondary.my-2.my-sm-0(type='submit') Search
+
+mixin navbar-color-scheme-3
+  nav.navbar.navbar-toggleable-md.navbar-light(style='background-color: #e3f2fd;')
+    button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarColor03', aria-controls='navbarColor03', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    a.navbar-brand(href='#') Navbar
+    #navbarColor03.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Features
+        li.nav-item
+          a.nav-link(href='#') Pricing
+        li.nav-item
+          a.nav-link(href='#') About
+      form.form-inline
+        input.form-control.mr-sm-2(placeholder='Search', type='text')
+        button.btn.btn-outline-primary.my-2.my-sm-0(type='submit') Search

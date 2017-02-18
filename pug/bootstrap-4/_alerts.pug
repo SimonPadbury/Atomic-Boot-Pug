@@ -1,0 +1,55 @@
+//- Alerts
+
+mixin alerts
+  .alert.alert-success(role='alert')
+    strong Well done!
+    |  You successfully read this important alert message.
+  .alert.alert-info(role='alert')
+    strong Heads up!
+    |  This alert needs your attention, but it's not super important.
+  .alert.alert-warning(role='alert')
+    strong Warning!
+    |  Better check yourself, you're not looking too good.
+  .alert.alert-danger(role='alert')
+    strong Oh snap!
+    |  Change a few things up and try submitting again.
+
+mixin alerts-link-color
+  .alert.alert-success(role='alert')
+    strong Well done!
+    |  You successfully read
+    = ' '
+    a.alert-link(href='#') this important alert message
+    | .
+  .alert.alert-info(role='alert')
+    strong Heads up!
+    |  This
+    = ' '
+    a.alert-link(href='#') alert needs your attention
+    | , but it's not super important.
+  .alert.alert-warning(role='alert')
+    strong Warning!
+    |  Better check yourself, you're
+    = ' '
+    a.alert-link(href='#') not looking too good
+    | .
+  .alert.alert-danger(role='alert')
+    strong Oh snap!
+    = ' '
+    a.alert-link(href='#') Change a few things up
+    |  and try submitting again.
+
+mixin alerts-additional-content
+  .alert.alert-success(role='alert')
+    h4.alert-heading Well done!
+    p
+      | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+    p.mb-0
+      | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+
+mixin alerts-dismissing
+  .alert.alert-warning.alert-dismissible.fade.show(role='alert')
+    button.close(type='button', data-dismiss='alert', aria-label='Close')
+      span(aria-hidden='true') ×
+    strong Holy guacamole!
+    |  You should check in on some of those fields below.

@@ -1,0 +1,69 @@
+//- List groups
+
+mixin list-group
+  ul.list-group
+    li.list-group-item Cras justo odio
+    li.list-group-item Dapibus ac facilisis in
+    li.list-group-item Morbi leo risus
+    li.list-group-item Porta ac consectetur ac
+    li.list-group-item Vestibulum at eros
+
+mixin list-group-2
+  ul.list-group
+    li.list-group-item.active Cras justo odio
+    li.list-group-item Dapibus ac facilisis in
+    li.list-group-item.disabled Morbi leo risus
+    li.list-group-item Porta ac consectetur ac
+    li.list-group-item Vestibulum at eros
+
+mixin list-group-contextual
+  ul.list-group
+    li.list-group-item Dapibus ac facilisis in
+    li.list-group-item.list-group-item-success Dapibus ac facilisis in
+    li.list-group-item.list-group-item-info Cras sit amet nibh libero
+    li.list-group-item.list-group-item-warning Porta ac consectetur ac
+    li.list-group-item.list-group-item-danger Vestibulum at eros
+
+mixin list-group-contextual-and-actionable
+  .list-group
+    a.list-group-item.list-group-item-action(href='#') Dapibus ac facilisis in
+    a.list-group-item.list-group-item-action.list-group-item-success(href='#') Dapibus ac facilisis in
+    a.list-group-item.list-group-item-action.list-group-item-info(href='#') Cras sit amet nibh libero
+    a.list-group-item.list-group-item-action.list-group-item-warning(href='#') Porta ac consectetur ac
+    a.list-group-item.list-group-item-action.list-group-item-danger(href='#') Vestibulum at eros
+
+mixin list-group-with-badges
+  ul.list-group
+    li.list-group-item.justify-content-between
+      | Cras justo odio
+      span.badge.badge-default.badge-pill 14
+    li.list-group-item.justify-content-between
+      | Dapibus ac facilisis in
+      span.badge.badge-default.badge-pill 2
+    li.list-group-item.justify-content-between
+      | Morbi leo risus
+      span.badge.badge-default.badge-pill 1
+
+mixin list-group-custom-content
+  .list-group
+    a.list-group-item.list-group-item-action.flex-column.align-items-start.active(href='#')
+      .d-flex.w-100.justify-content-between
+        h5.mb-1 List group item heading
+        small 3 days ago
+      p.mb-1
+        | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+      small Donec id elit non mi porta.
+    a.list-group-item.list-group-item-action.flex-column.align-items-start(href='#')
+      .d-flex.w-100.justify-content-between
+        h5.mb-1 List group item heading
+        small.text-muted 3 days ago
+      p.mb-1
+        | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+      small.text-muted Donec id elit non mi porta.
+    a.list-group-item.list-group-item-action.flex-column.align-items-start(href='#')
+      .d-flex.w-100.justify-content-between
+        h5.mb-1 List group item heading
+        small.text-muted 3 days ago
+      p.mb-1
+        | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+      small.text-muted Donec id elit non mi porta.

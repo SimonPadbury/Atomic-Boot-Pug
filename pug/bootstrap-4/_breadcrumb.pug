@@ -1,0 +1,16 @@
+//- Breadcrumb
+
+mixin breadcrumb
+  ol.breadcrumb
+    li.breadcrumb-item
+      a(href='#') Home
+    li.breadcrumb-item
+      a(href='#') Library
+    li.breadcrumb-item.active Data
+
+mixin nav-breadcrumb
+  nav.breadcrumb
+    a.breadcrumb-item(href='#') Home
+    a.breadcrumb-item(href='#') Library
+    a.breadcrumb-item(href='#') Data
+    span.breadcrumb-item.active Bootstrap

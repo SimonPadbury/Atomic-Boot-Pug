@@ -1,0 +1,242 @@
+//- Dropdowns
+
+mixin dropdown
+  .btn-group.dropdown
+    button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      | Dropdown button
+    .dropdown-menu(aria-labelledby='dropdownMenuButton')
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+  .btn-group
+    button.btn.btn-secondary(type='button') Secondary
+    button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      span.sr-only Toggle Dropdown
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+
+mixin dropdown-2
+  .dropdown
+    a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle(href='https://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      | Dropdown link
+    .dropdown-menu(aria-labelledby='dropdownMenuLink')
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+
+mixin dropdown-button-group
+  .btn-group
+    button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Primary
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Secondary
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Success
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Info
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-warning.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Warning
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Danger
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+
+mixin dropdown-split-buttons
+  .btn-group
+    button.btn.btn-primary(type='button') Primary
+    button.btn.btn-primary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      span.sr-only Toggle Dropdown
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-secondary(type='button') Secondary
+    button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      span.sr-only Toggle Dropdown
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-success(type='button') Success
+    button.btn.btn-success.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      span.sr-only Toggle Dropdown
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-info(type='button') Info
+    button.btn.btn-info.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      span.sr-only Toggle Dropdown
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-warning(type='button') Warning
+    button.btn.btn-warning.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      span.sr-only Toggle Dropdown
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+  .btn-group
+    button.btn.btn-danger(type='button') Danger
+    button.btn.btn-danger.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      span.sr-only Toggle Dropdown
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  // /btn-group
+
+mixin dropdown-sizing
+  .btn-toolbar(role='toolbar')
+    .btn-group
+      button.btn.btn-secondary.btn-lg.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Large button
+      .dropdown-menu
+        a.dropdown-item(href='#') Action
+        a.dropdown-item(href='#') Another action
+        a.dropdown-item(href='#') Something else here
+        .dropdown-divider
+        a.dropdown-item(href='#') Separated link
+    // /btn-group
+    .btn-group.ml-2
+      button.btn.btn-lg.btn-secondary(type='button') Large split button
+      button.btn.btn-lg.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        span.sr-only Toggle Dropdown
+      .dropdown-menu
+        a.dropdown-item(href='#') Action
+        a.dropdown-item(href='#') Another action
+        a.dropdown-item(href='#') Something else here
+        .dropdown-divider
+        a.dropdown-item(href='#') Separated link
+    // /btn-group
+  // /btn-toolbar
+  .btn-toolbar(role='toolbar')
+    .btn-group
+      button.btn.btn-secondary.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Small button
+      .dropdown-menu
+        a.dropdown-item(href='#') Action
+        a.dropdown-item(href='#') Another action
+        a.dropdown-item(href='#') Something else here
+        .dropdown-divider
+        a.dropdown-item(href='#') Separated link
+    // /btn-group
+    .btn-group.ml-2
+      button.btn.btn-sm.btn-secondary(type='button') Small split button
+      button.btn.btn-sm.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        span.sr-only Toggle Dropdown
+      .dropdown-menu
+        a.dropdown-item(href='#') Action
+        a.dropdown-item(href='#') Another action
+        a.dropdown-item(href='#') Something else here
+        .dropdown-divider
+        a.dropdown-item(href='#') Separated link
+    // /btn-group
+  // /btn-toolbar
+
+mixin dropup
+  .btn-group.dropup
+    button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      | Dropup
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+  .btn-group.dropup
+    button.btn.btn-secondary(type='button')
+      | Split dropup
+    button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      span.sr-only Toggle Dropdown
+    .dropdown-menu
+      a.dropdown-item(href='#') Action
+      a.dropdown-item(href='#') Another action
+      a.dropdown-item(href='#') Something else here
+      .dropdown-divider
+      a.dropdown-item(href='#') Separated link
+
+mixin dropdown-menu-items
+  .dropdown
+    button#dropdownMenu2.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      | Dropdown
+    .dropdown-menu(aria-labelledby='dropdownMenu2')
+      button.dropdown-item(type='button') Action
+      button.dropdown-item(type='button') Another action
+      button.dropdown-item(type='button') Something else here
+
+mixin dropdown-menu-right
+  .btn-group
+    button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      | This dropdown's menu is right-aligned
+    .dropdown-menu.dropdown-menu-right
+      button.dropdown-item(type='button') Action
+      button.dropdown-item(type='button') Another action
+      button.dropdown-item(type='button') Something else here

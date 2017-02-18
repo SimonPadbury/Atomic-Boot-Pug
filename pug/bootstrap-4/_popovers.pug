@@ -1,0 +1,14 @@
+//- Popovers
+
+mixin popover
+  button.btn.btn-lg.btn-danger(type='button', data-toggle='popover', title='', data-content="And here's some amazing content. It's very engaging. Right?", data-original-title='Popover title') Click to toggle popover
+
+mixin popover-four-directions
+  button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='top', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-original-title='', title='')
+    | Popover on top
+  button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='right', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-original-title='', title='')
+    | Popover on right
+  button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='bottom', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-original-title='', title='')
+    | Popover on bottom
+  button.btn.btn-secondary(type='button', data-container='body', data-toggle='popover', data-placement='left', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-original-title='', title='')
+    | Popover on left

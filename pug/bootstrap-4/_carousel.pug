@@ -1,0 +1,76 @@
+//- Carousel
+
+mixin carousel-slides-only
+  #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel')
+    .carousel-inner(role='listbox')
+      .carousel-item
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide', alt='First slide [800x400]', data-holder-rendered='true')
+      .carousel-item.active
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=666&fg=444&text=Second slide', alt='Second slide [800x400]', data-holder-rendered='true')
+      .carousel-item
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=555&fg=333&text=Third slide', alt='Third slide [800x400]', data-holder-rendered='true')
+
+mixin carousel-controls
+  #carouselExampleControls.carousel.slide(data-ride='carousel')
+    .carousel-inner(role='listbox')
+      .carousel-item
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide', alt='First slide [800x400]', data-holder-rendered='true')
+      .carousel-item
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=666&fg=444&text=Second slide', alt='Second slide [800x400]', data-holder-rendered='true')
+      .carousel-item.active
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=555&fg=333&text=Third slide', alt='Third slide [800x400]', data-holder-rendered='true')
+    a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+
+mixin carousel-indicators
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li(data-target='#carouselExampleIndicators', data-slide-to='0')
+      li(data-target='#carouselExampleIndicators', data-slide-to='1')
+      li.active(data-target='#carouselExampleIndicators', data-slide-to='2')
+    .carousel-inner(role='listbox')
+      .carousel-item
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide', alt='First slide [800x400]', data-holder-rendered='true')
+      .carousel-item
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=666&fg=444&text=Second slide', alt='Second slide [800x400]', data-holder-rendered='true')
+      .carousel-item.active
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=555&fg=333&text=Third slide', alt='Third slide [800x400]', data-holder-rendered='true')
+    a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+
+mixin carousel-captions
+  #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li(data-target='#carouselExampleCaptions', data-slide-to='0')
+      li(data-target='#carouselExampleCaptions', data-slide-to='1')
+      li.active(data-target='#carouselExampleCaptions', data-slide-to='2')
+    .carousel-inner(role='listbox')
+      .carousel-item
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=777&fg=555&text=First slide', alt='First slide [800x400]', data-holder-rendered='true')
+        .carousel-caption.d-none.d-md-block
+          h3 First slide label
+          p Nulla vitae elit libero, a pharetra augue mollis interdum.
+      .carousel-item
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=666&fg=444&text=Second slide', alt='Second slide [800x400]', data-holder-rendered='true')
+        .carousel-caption.d-none.d-md-block
+          h3 Second slide label
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .carousel-item.active
+        img.d-block.img-fluid(data-src='holder.js/800x400?auto=yes&bg=555&fg=333&text=Third slide', alt='Third slide [800x400]', data-holder-rendered='true')
+        .carousel-caption.d-none.d-md-block
+          h3 Third slide label
+          p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+    a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next

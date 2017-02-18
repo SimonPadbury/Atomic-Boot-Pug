@@ -1,0 +1,103 @@
+doctype(doctype)
+
+html(lang="en")
+  head
+    //- Required meta tags
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+    //- Bootstrap CSS
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
+
+    //- Font Awesome
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+    //- Style guide styles (not part of your project)
+    link(rel="stylesheet" href="css/styleguide-styles.css")
+
+    //- Holder.JS (for placeholders)
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js')
+
+  body.sg-body
+    include bootstrap-4/__bootstrap-4-index
+
+    include styleguide/__styleguide-navbar
+
+    .container-fluid
+      .row
+        .col.col-md-3.col-lg-2
+          include styleguide/__styleguide-sidebar
+
+        .col.col-md-9.col-lg-10
+          .sg-content(style="padding-bottom:3rem;")
+
+            //- About
+            h2#about.sg-h2 About
+
+            include styleguide/__styleguide-about
+
+            //- Foundation
+            h2#foundation.sg-h2 Foundation
+
+            include styleguide/__styleguide-color-swatch
+            include styleguide/__styleguide-font-stacks
+
+            //- Basics
+            h2#basics.sg-h2 Basics
+
+            include styleguide/_headings
+            include styleguide/_text-elements
+            include styleguide/_address
+            include styleguide/_blockquote
+            include styleguide/_code
+            include styleguide/_lists
+            include styleguide/_tables
+            include styleguide/_badges
+            include styleguide/_images
+            include styleguide/_figures
+            include styleguide/_progress
+
+            //- Buttons
+            h2#buttons.sg-h2 Buttons
+            include styleguide/_buttons
+
+            //- Forms
+            h2#forms.sg-h2 Forms
+            include styleguide/_forms
+
+            //- Layout
+            h2#layout.sg-h2 Layout
+
+            include styleguide/_grid
+            include styleguide/_media-objects
+
+            //-Components
+            h2#components.sg-h2 Components
+
+            include styleguide/_alerts
+            include styleguide/_breadcrumb
+            include styleguide/_cards
+            include styleguide/_carousel
+            include styleguide/_dropdowns
+            include styleguide/_jumbotron
+            include styleguide/_list-groups
+            include styleguide/_navbars
+            include styleguide/_navs
+            include styleguide/_modal
+            include styleguide/_pagination
+            include styleguide/_popovers
+            include styleguide/_scrollspy
+            include styleguide/_tooltips
+
+    //- jQuery first, then Tether, then Bootstrap JS.
+    script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js", integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n", crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js", integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb", crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js", integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn", crossorigin="anonymous")
+    script.
+      $('body').scrollspy({ target: '#navbar-example2' })
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })

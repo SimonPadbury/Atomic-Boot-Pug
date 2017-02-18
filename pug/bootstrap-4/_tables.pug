@@ -1,0 +1,487 @@
+//- Tables
+
+mixin table
+  table.table
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td Larry
+        td the Bird
+        td @twitter
+
+mixin table-inverse
+  table.table.table-inverse
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td Larry
+        td the Bird
+        td @twitter
+
+mixin table-head-options
+  table.table
+    thead.thead-inverse
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td Larry
+        td the Bird
+        td @twitter
+  table.table
+    thead.thead-default
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td Larry
+        td the Bird
+        td @twitter
+
+mixin table-striped
+  table.table.table-striped
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td Larry
+        td the Bird
+        td @twitter
+
+mixin table-striped-inverse
+  table.table.table-striped.table-inverse
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td Larry
+        td the Bird
+        td @twitter
+
+mixin table-bordered
+  table.table.table-bordered
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Mark
+        td Otto
+        td @TwBootstrap
+      tr
+        th(scope='row') 3
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 4
+        td(colspan='2') Larry the Bird
+        td @twitter
+
+mixin table-bordered-inverse
+  table.table.table-bordered.table-inverse
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Mark
+        td Otto
+        td @TwBootstrap
+      tr
+        th(scope='row') 3
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 4
+        td(colspan='2') Larry the Bird
+        td @twitter
+
+mixin table-hoverable-rows
+  table.table.table-hover
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td(colspan='2') Larry the Bird
+        td @twitter
+
+mixin table-hoverable-rows-inverse
+  table.table.table-inverse.table-hover
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td(colspan='2') Larry the Bird
+        td @twitter
+
+mixin table-small
+  table.table.table-sm
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td(colspan='2') Larry the Bird
+        td @twitter
+
+mixin table-small-inverse
+  table.table.table-sm.table-inverse
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td(colspan='2') Larry the Bird
+        td @twitter
+
+mixin table-contextual-classes
+  table.table
+    thead
+      tr
+        th #
+        th Column heading
+        th Column heading
+        th Column heading
+    tbody
+      tr.table-active
+        th(scope='row') 1
+        td Column content
+        td Column content
+        td Column content
+      tr
+        th(scope='row') 2
+        td Column content
+        td Column content
+        td Column content
+      tr.table-success
+        th(scope='row') 3
+        td Column content
+        td Column content
+        td Column content
+      tr
+        th(scope='row') 4
+        td Column content
+        td Column content
+        td Column content
+      tr.table-info
+        th(scope='row') 5
+        td Column content
+        td Column content
+        td Column content
+      tr
+        th(scope='row') 6
+        td Column content
+        td Column content
+        td Column content
+      tr.table-warning
+        th(scope='row') 7
+        td Column content
+        td Column content
+        td Column content
+      tr
+        th(scope='row') 8
+        td Column content
+        td Column content
+        td Column content
+      tr.table-danger
+        th(scope='row') 9
+        td Column content
+        td Column content
+        td Column content
+
+mixin table-contextual-classes-inverse
+  table.table.table-inverse
+    thead
+      tr
+        th #
+        th Column heading
+        th Column heading
+        th Column heading
+    tbody
+      tr.bg-primary
+        th(scope='row') 1
+        td Column content
+        td Column content
+        td Column content
+      tr
+        th(scope='row') 2
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-success
+        th(scope='row') 3
+        td Column content
+        td Column content
+        td Column content
+      tr
+        th(scope='row') 4
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-info
+        th(scope='row') 5
+        td Column content
+        td Column content
+        td Column content
+      tr
+        th(scope='row') 6
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-warning
+        th(scope='row') 7
+        td Column content
+        td Column content
+        td Column content
+      tr
+        th(scope='row') 8
+        td Column content
+        td Column content
+        td Column content
+      tr.bg-danger
+        th(scope='row') 9
+        td Column content
+        td Column content
+        td Column content
+
+mixin table-responsive
+  table.table.table-responsive
+    thead
+      tr
+        th #
+        th Table heading
+        th Table heading
+        th Table heading
+        th Table heading
+        th Table heading
+        th Table heading
+    tbody
+      tr
+        th(scope='row') 1
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+      tr
+        th(scope='row') 2
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+      tr
+        th(scope='row') 3
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+
+mixin table-bordered-responsive
+  table.table.table-bordered.table-responsive
+    thead
+      tr
+        th #
+        th Table heading
+        th Table heading
+        th Table heading
+        th Table heading
+        th Table heading
+        th Table heading
+    tbody
+      tr
+        th(scope='row') 1
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+      tr
+        th(scope='row') 2
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+      tr
+        th(scope='row') 3
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell
+        td Table cell

@@ -1,0 +1,127 @@
+//- Modal
+
+mixin modal
+  #exampleModalLive.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLiveLabel', style='display: none;', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLiveLabel.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p Woohoo, you're reading this text in a modal!
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+  button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalLive')
+    | Launch demo modal
+
+mixin modal-scrolling-long-content
+  #exampleModalLong.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLongTitle', style='display: none;', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLongTitle.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          p
+            | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          p
+            | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          p
+            | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          p
+            | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          p
+            | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          p
+            | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          p
+            | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          p
+            | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          p
+            | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          p
+            | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          p
+            | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          p
+            | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          p
+            | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          p
+            | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          p
+            | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          p
+            | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          p
+            | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          p
+            | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+  button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalLong')
+    | Launch modal with long scrolling content
+
+mixin modal-with-tooltip
+  #exampleModalPopovers.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalPopoversLabel', style='display: none;', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalPopoversLabel.modal-title Modal title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          h5 Popover in a modal
+          p
+            | This
+            a.btn.btn-secondary.popover-test(href='#', role='button', title='', data-content='Popover body content is set in this attribute.', data-original-title='Popover title') button
+            |  triggers a popover on click.
+          hr
+          h5 Tooltips in a modal
+          p
+            a.tooltip-test(href='#', title='', data-original-title='Tooltip') This link
+            |  and
+            a.tooltip-test(href='#', title='', data-original-title='Tooltip') that link
+            |  have tooltips on hover.
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+  button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalPopovers')
+    | Launch demo modal
+
+mixin modal-with-grid
+  #gridSystemModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='gridModalLabel', style='display: none;', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#gridModalLabel.modal-title Grids in modals
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          .container-fluid.sg-example-row
+            .row
+              .col-md-4 .col-md-4
+              .col-md-4.col-md-offset-4 .col-md-4 .col-md-offset-4
+            .row
+              .col-md-3.col-md-offset-3 .col-md-3 .col-md-offset-3
+              .col-md-2.col-md-offset-4 .col-md-2 .col-md-offset-4
+            .row
+              .col-md-6.col-md-offset-3 .col-md-6 .col-md-offset-3
+            .row
+              .col-sm-9
+                | Level 1: .col-sm-9
+                .row
+                  .col-8.col-sm-6
+                    | Level 2: .col-8 .col-sm-6
+                  .col-4.col-sm-6
+                    | Level 2: .col-4 .col-sm-6
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Save changes
+  button.btn.btn-primary(type='button', data-toggle='modal', data-target='#gridSystemModal')
+    | Launch demo modal

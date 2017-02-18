@@ -1,0 +1,109 @@
+//- Button Groups
+
+mixin button-group
+  .btn-group(role='group', aria-label='Basic example')
+    button.btn.btn-secondary(type='button') Left
+    button.btn.btn-secondary(type='button') Middle
+    button.btn.btn-secondary(type='button') Right
+
+mixin button-toolbar
+  .btn-toolbar(role='toolbar', aria-label='Toolbar with button groups')
+    .btn-group.mr-2(role='group', aria-label='First group')
+      button.btn.btn-secondary(type='button') 1
+      button.btn.btn-secondary(type='button') 2
+      button.btn.btn-secondary(type='button') 3
+      button.btn.btn-secondary(type='button') 4
+    .btn-group.mr-2(role='group', aria-label='Second group')
+      button.btn.btn-secondary(type='button') 5
+      button.btn.btn-secondary(type='button') 6
+      button.btn.btn-secondary(type='button') 7
+    .btn-group(role='group', aria-label='Third group')
+      button.btn.btn-secondary(type='button') 8
+
+mixin button-toolbar-2
+  .btn-toolbar.mb-3(role='toolbar', aria-label='Toolbar with button groups')
+    .btn-group.mr-2(role='group', aria-label='First group')
+      button.btn.btn-secondary(type='button') 1
+      button.btn.btn-secondary(type='button') 2
+      button.btn.btn-secondary(type='button') 3
+      button.btn.btn-secondary(type='button') 4
+    .input-group
+      span#btnGroupAddon.input-group-addon @
+      input.form-control(placeholder='Input group example', aria-describedby='btnGroupAddon', type='text')
+  .btn-toolbar.justify-content-between(role='toolbar', aria-label='Toolbar with button groups')
+    .btn-toolbar.mb-3(role='toolbar', aria-label='Toolbar with button groups')
+      .btn-group(role='group', aria-label='First group')
+        button.btn.btn-secondary(type='button') 1
+        button.btn.btn-secondary(type='button') 2
+        button.btn.btn-secondary(type='button') 3
+        button.btn.btn-secondary(type='button') 4
+    .input-group
+      span#btnGroupAddon2.input-group-addon @
+      input.form-control(placeholder='Input group example', aria-describedby='btnGroupAddon2', type='text')
+
+mixin button-group-sizing
+  .btn-group.btn-group-lg(role='group', aria-label='Large button group')
+    button.btn.btn-secondary(type='button') Left
+    button.btn.btn-secondary(type='button') Middle
+    button.btn.btn-secondary(type='button') Right
+  br
+  .btn-group(role='group', aria-label='Default button group')
+    button.btn.btn-secondary(type='button') Left
+    button.btn.btn-secondary(type='button') Middle
+    button.btn.btn-secondary(type='button') Right
+  br
+  .btn-group.btn-group-sm(role='group', aria-label='Small button group')
+    button.btn.btn-secondary(type='button') Left
+    button.btn.btn-secondary(type='button') Middle
+    button.btn.btn-secondary(type='button') Right
+
+mixin button-group-nesting
+  .btn-group(role='group', aria-label='Button group with nested dropdown')
+    button.btn.btn-secondary(type='button') 1
+    button.btn.btn-secondary(type='button') 2
+  .btn-group(role='group')
+    button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      | Dropdown
+    .dropdown-menu(aria-labelledby='btnGroupDrop1')
+      a.dropdown-item(href='#') Dropdown link
+      a.dropdown-item(href='#') Dropdown link
+
+mixin button-group-vertical
+  .btn-group-vertical(role='group', aria-label='Vertical button group')
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+
+mixin button-group-vertical-2
+  .btn-group-vertical(role='group', aria-label='Vertical button group')
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    .btn-group(role='group')
+      button#btnGroupVerticalDrop1.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupVerticalDrop1')
+        a.dropdown-item(href='#') Dropdown link
+        a.dropdown-item(href='#') Dropdown link
+    button.btn.btn-secondary(type='button') Button
+    button.btn.btn-secondary(type='button') Button
+    .btn-group(role='group')
+      button#btnGroupVerticalDrop2.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupVerticalDrop2')
+        a.dropdown-item(href='#') Dropdown link
+        a.dropdown-item(href='#') Dropdown link
+    .btn-group(role='group')
+      button#btnGroupVerticalDrop3.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupVerticalDrop3')
+        a.dropdown-item(href='#') Dropdown link
+        a.dropdown-item(href='#') Dropdown link
+    .btn-group(role='group')
+      button#btnGroupVerticalDrop4.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        | Dropdown
+      .dropdown-menu(aria-labelledby='btnGroupVerticalDrop4')
+        a.dropdown-item(href='#') Dropdown link
+        a.dropdown-item(href='#') Dropdown link

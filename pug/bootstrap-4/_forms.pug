@@ -1,0 +1,169 @@
+//- Forms
+
+mixin form-controls
+  form
+    .form-group
+      label(for='exampleInputEmail1') Email address
+      input#exampleInputEmail1.form-control(aria-describedby='emailHelp', placeholder='Enter email', type='email')
+      small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+    .form-group
+      label(for='exampleInputPassword1') Password
+      input#exampleInputPassword1.form-control(placeholder='Password', type='password')
+    .form-group
+      label(for='exampleSelect1') Example select
+      select#exampleSelect1.form-control
+        option 1
+        option 2
+        option 3
+        option 4
+        option 5
+    .form-group
+      label(for='exampleSelect2') Example multiple select
+      select#exampleSelect2.form-control(multiple='')
+        option 1
+        option 2
+        option 3
+        option 4
+        option 5
+    .form-group
+      label(for='exampleTextarea') Example textarea
+      textarea#exampleTextarea.form-control(rows='3')
+    //-
+      .form-group
+        label(for='exampleInputFile') File input
+        input#exampleInputFile.form-control-file(aria-describedby='fileHelp', type='file')
+        small#fileHelp.form-text.text-muted
+          | This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
+    fieldset.form-group
+      legend Radio buttons
+      .form-check
+        label.form-check-label
+          input#optionsRadios1.form-check-input(name='optionsRadios', value='option1', checked='', type='radio')
+          |         Option one is this and that—be sure to include why it's great
+      .form-check
+        label.form-check-label
+          input#optionsRadios2.form-check-input(name='optionsRadios', value='option2', type='radio')
+          |         Option two can be something else and selecting it will deselect option one
+      .form-check.disabled
+        label.form-check-label
+          input#optionsRadios3.form-check-input(name='optionsRadios', value='option3', disabled='', type='radio')
+          |         Option three is disabled
+    .form-check
+      label.form-check-label
+        input.form-check-input(type='checkbox')
+        |       Check me out
+    button.btn.btn-primary(type='submit') Submit
+
+mixin form-textual-inputs
+  .form-group.row
+    label.col-2.col-form-label(for='example-text-input') Text
+    .col-10
+      input#example-text-input.form-control(value='Artisanal kale', type='text')
+  .form-group.row
+    label.col-2.col-form-label(for='example-search-input') Search
+    .col-10
+      input#example-search-input.form-control(value='How do I shoot web', type='search')
+  .form-group.row
+    label.col-2.col-form-label(for='example-email-input') Email
+    .col-10
+      input#example-email-input.form-control(value='bootstrap@example.com', type='email')
+  .form-group.row
+    label.col-2.col-form-label(for='example-url-input') URL
+    .col-10
+      input#example-url-input.form-control(value='https://getbootstrap.com', type='url')
+  .form-group.row
+    label.col-2.col-form-label(for='example-tel-input') Telephone
+    .col-10
+      input#example-tel-input.form-control(value='1-(555)-555-5555', type='tel')
+  .form-group.row
+    label.col-2.col-form-label(for='example-password-input') Password
+    .col-10
+      input#example-password-input.form-control(value='hunter2', type='password')
+  .form-group.row
+    label.col-2.col-form-label(for='example-number-input') Number
+    .col-10
+      input#example-number-input.form-control(value='42', type='number')
+  .form-group.row
+    label.col-2.col-form-label(for='example-datetime-local-input') Date and time
+    .col-10
+      input#example-datetime-local-input.form-control(value='2011-08-19T13:45:00', type='datetime-local')
+  .form-group.row
+    label.col-2.col-form-label(for='example-date-input') Date
+    .col-10
+      input#example-date-input.form-control(value='2011-08-19', type='date')
+  .form-group.row
+    label.col-2.col-form-label(for='example-month-input') Month
+    .col-10
+      input#example-month-input.form-control(value='2011-08', type='month')
+  .form-group.row
+    label.col-2.col-form-label(for='example-week-input') Week
+    .col-10
+      input#example-week-input.form-control(value='2011-W33', type='week')
+  .form-group.row
+    label.col-2.col-form-label(for='example-time-input') Time
+    .col-10
+      input#example-time-input.form-control(value='13:45:00', type='time')
+  .form-group.row
+    label.col-2.col-form-label(for='example-color-input') Color
+    .col-10
+      input#example-color-input.form-control(value='#563d7c', type='color')
+
+mixin form-disabled-states
+  form
+    fieldset(disabled='')
+      .form-group
+        label(for='disabledTextInput') Disabled input
+        input#disabledTextInput.form-control(placeholder='Disabled input', type='text')
+      .form-group
+        label(for='disabledSelect') Disabled select menu
+        select#disabledSelect.form-control
+          option Disabled select
+      .checkbox
+        label
+          input(type='checkbox')
+          |  Can't check this
+      button.btn.btn-primary(type='submit') Submit
+
+mixin form-sizing
+  input.form-control.form-control-lg(placeholder='.form-control-lg', type='text')
+  input.form-control(placeholder='Default input', type='text')
+  input.form-control.form-control-sm(placeholder='.form-control-sm', type='text')
+
+mixin form-sizing-2
+  select.form-control.form-control-lg
+    option Large select
+  select.form-control
+    option Default select
+  select.form-control.form-control-sm
+    option Small select
+
+mixin form-column-sizing
+  .row
+    .col-2
+      input.form-control(placeholder='.col-2', type='text')
+    .col-3
+      input.form-control(placeholder='.col-3', type='text')
+    .col-4
+      input.form-control(placeholder='.col-4', type='text')
+
+mixin form-validation
+  .form-group.has-success
+    label.form-control-label(for='inputSuccess1') Input with success
+    input#inputSuccess1.form-control.form-control-success(type='text')
+    .form-control-feedback Success! You've done it.
+    small.form-text.text-muted Example help text that remains unchanged.
+  .form-group.has-warning
+    label.form-control-label(for='inputWarning1') Input with warning
+    input#inputWarning1.form-control.form-control-warning(type='text')
+    .form-control-feedback Shucks, check the formatting of that and try again.
+    small.form-text.text-muted Example help text that remains unchanged.
+  .form-group.has-danger
+    label.form-control-label(for='inputDanger1') Input with danger
+    input#inputDanger1.form-control.form-control-danger(type='text')
+    .form-control-feedback Sorry, that username's taken. Try another?
+    small.form-text.text-muted Example help text that remains unchanged.
+
+mixin form-file-browser
+  label.custom-file
+    input#file.custom-file-input(type='file')
+    span.custom-file-control

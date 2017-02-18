@@ -1,0 +1,72 @@
+//- Media Objects
+
+mixin media-object
+  .media
+    img.d-flex.mr-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;' data-holder-rendered='true')
+    .media-body
+      h5.mt-0 Media object
+      | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+mixin media-object-nesting
+  .media
+    img.d-flex.mr-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;', data-holder-rendered='true')
+    .media-body
+      h5.mt-0 Media object
+      | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      .media.mt-3
+        a.d-flex.pr-3(href='#')
+          img(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;', data-holder-rendered='true')
+        .media-body
+          h5.mt-0 Media object
+          | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+mixin media-object-alignment
+  .media
+    img.d-flex.align-self-start.mr-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;', data-holder-rendered='true')
+    .media-body
+      h5.mt-0 Top-aligned media object
+      p
+        | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      p
+        | Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  .media
+    img.d-flex.align-self-center.mr-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;', data-holder-rendered='true')
+    .media-body
+      h5.mt-0 Center-aligned media object
+      p
+        | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      p
+        | Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  .media
+    img.d-flex.align-self-end.mr-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;' data-holder-rendered='true')
+    .media-body
+      h5.mt-0 Bottom-aligned media object
+      p
+        | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      p.mb-0
+        | Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+mixin media-object-order
+  .media
+    .media-body
+      h5.mt-0.mb-1 Media object
+      | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    img.d-flex.ml-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;', data-holder-rendered='true')
+
+mixin media-object-list
+  ul.list-unstyled
+    li.media
+      img.d-flex.mr-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;', data-holder-rendered='true')
+      .media-body
+        h5.mt-0.mb-1 List-based media object
+        | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    li.media.my-4
+      img.d-flex.mr-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;', data-holder-rendered='true')
+      .media-body
+        h5.mt-0.mb-1 List-based media object
+        | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    li.media
+      img.d-flex.mr-3(data-src='holder.js/64x64', alt='64x64', style='width: 64px; height: 64px;', data-holder-rendered='true')
+      .media-body
+        h5.mt-0.mb-1 List-based media object
+        | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.

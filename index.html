@@ -1,0 +1,896 @@
+<!DOCTYPE (doctype)>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/styleguide-styles.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+  </head>
+  <body class="sg-body">
+    <nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarStyleGuide" aria-controls="navbarStyleGuide" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Atomic Boot Pug</a>
+      <div class="collapse navbar-collapse" id="navbarStyleGuide">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="https://github.com/SimonPadbury/Atomic-Boot-Pug"><i class="fa fa-github" aria-hidden="true"></i> GitHub Repository</a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#foundation">Foundation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#basics">Basics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
+          <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
+          <li class="nav-item"><a class="nav-link" href="#layout">Layout</a></li>
+          <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-md-3 col-lg-2">
+          <div class="sg-sidebar">
+            <div class="nav flex-column" style="margin-bottom:20px"><a class="nav-link" href="#about"><b>About</b></a></div>
+            <div class="nav list-group" style="margin-bottom:20px"><a class="nav-link" href="#foundation"><b>Foundation</b></a><a class="nav-link" href="#color-swatch">Color Swatch</a><a class="nav-link" href="#font-stacks">Font Stacks</a></div>
+            <div class="nav list-group" style="margin-bottom:20px"><a class="nav-link" href="#basics"><b>Basics</b></a><a class="nav-link" href="#headings">Headings</a><a class="nav-link" href="#text-elements">Text Elements</a><a class="nav-link" href="#address">Address</a><a class="nav-link" href="#blockquote">Blockquote</a><a class="nav-link" href="#code">Code</a><a class="nav-link" href="#lists">Lists</a><a class="nav-link" href="#definition-lists">Definition Lists</a><a class="nav-link" href="#tables">Tables</a><a class="nav-link" href="#badges">Badges</a><a class="nav-link" href="#images">Images</a><a class="nav-link" href="#figures">Figures</a><a class="nav-link" href="#progress-bars">Progress Bars</a></div>
+            <div class="nav list-group" style="margin-bottom:20px"><a class="nav-link" href="#buttons"><b>Buttons</b></a><a class="nav-link" href="#buttons">Buttons</a></div>
+            <div class="nav list-group" style="margin-bottom:20px"><a class="nav-link" href="#forms"><b>Forms</b></a><a class="nav-link" href="#forms">Forms</a></div>
+            <div class="nav list-group" style="margin-bottom:20px"><a class="nav-link" href="#layout"><b>Layout</b></a><a class="nav-link" href="#grid">Grid</a><a class="nav-link" href="#media-object">Media Object</a></div>
+            <div class="nav list-group" style="margin-bottom:20px"><a class="nav-link" href="#components"><b>Components</b></a><a class="nav-link" href="#alerts">Alerts</a><a class="nav-link" href="#breadcrumb">Breadcrumbs</a><a class="nav-link" href="#cards">Cards</a><a class="nav-link" href="#carousel">Carousel</a><a class="nav-link" href="#drodowns">Dropdowns</a><a class="nav-link" href="#forms-advanced">Forms Advanced</a><a class="nav-link" href="#jumbotron">Jumbotron</a><a class="nav-link" href="#list-groups">List Groups</a><a class="nav-link" href="#navbar">Navbar</a><a class="nav-link" href="#navs">Navs (&amp; Tabs)</a><a class="nav-link" href="#modal">Modal</a><a class="nav-link" href="#pagination">Pagination</a><a class="nav-link" href="#popovers">Popovers</a><a class="nav-link" href="#scrollspy">Scrollspy</a><a class="nav-link" href="#tooltips">Tooltips</a></div>
+          </div>
+        </div>
+        <div class="col col-md-9 col-lg-10">
+          <div class="sg-content" style="padding-bottom:3rem">
+            <h2 class="sg-h2" id="about">About</h2>
+            <p class="lead">This is the place to introduce your project style guide. But in the meantime, I'm using it for this intro.</p>
+            <p>Inspired by Brad Frost's <a href="http://atomicdesign.bradfrost.com/">Atomic Design</a>, Atomic Boot Pug is comprised of a set of Bootstrap 4 demo snippets (tranformed into <a href="https://pugjs.org/api/getting-started.html">Pug</a> mixins) &nbsp; essentially as coped from <a href="http://v4-alpha.getbootstrap.com/">http://v4-alpha.getbootstrap.com/</a>. You will find these in the <code>pug/bootstrap-4/</code> folder.</p>
+            <p>The style guide sections (wrapping the demos and adding a header and a place for your notes) are in the <code>pug/styleguide/</code> folder.</p>
+            <p>In addition to the demos you see in <code>index.html</code>, many more mixins can be found on the Pug partials in the <code>pug/styleguide/</code> folder. Swap them into your style guide any way you need. And feel totally free to modify the Bootstrap 4 Pug mixins to make them more relevant for your own style guide.</p>
+            <p>Create new sections/ partials/ mixins for demos of your added CSS, scripts and plugins you are including in your project.</p>
+            <p>
+              Also, create your own webpage templates and partial templates. For rapid prototyping, you may temporarily include some of the Bootstrap Pug snippets before duplicating and swapping in your own actual content.
+              
+            </p>
+            <div class="alert alert-info">Kick off your project with Atomic Boot Pug &ndash; and then make your website look less like Bootstrap...!</div>
+            <h2 class="sg-h2" id="foundation">Foundation</h2>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="color-swatch">Color Swatch</h3>
+              <style>
+                .swatch {
+                  display: inline-block;
+                  width: 5rem;
+                  height: 5rem
+                }
+                
+              </style>
+              <div class="sg-example">
+                <div class="swatch" style="background-color:#292B2C"></div>
+                <div class="swatch" style="background-color:#7B7B7B"></div>
+                <div class="swatch" style="background-color:#99979F"></div>
+                <div class="swatch" style="background-color:#ECEEEF"></div>
+                <div class="swatch" style="background-color:#F7F7F7"></div>
+              </div>
+              <div class="sg-example">
+                <div class="swatch" style="background-color:#0275D8"></div>
+                <div class="swatch" style="background-color:#5CB85C"></div>
+                <div class="swatch" style="background-color:#5BC0DE"></div>
+                <div class="swatch" style="background-color:#F0AD4E"></div>
+                <div class="swatch" style="background-color:#D9534F"></div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="font-stacks">Font Stacks</h3>
+              <style>
+                .sg-font-primary {}
+                .sg-font-secondary {}
+                
+              </style>
+              <div class="sg-example">
+                <p class="sg-font">font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;</p>
+              </div>
+            </div>
+            <h2 class="sg-h2" id="basics">Basics</h2>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="headings">Headings</h3>
+              <div class="sg-example">
+                    <h1>h1. Bootstrap heading</h1>
+                    <h2>h2. Bootstrap heading</h2>
+                    <h3>h3. Bootstrap heading</h3>
+                    <h4>h4. Bootstrap heading</h4>
+                    <h5>h5. Bootstrap heading</h5>
+                    <h6>h6. Bootstrap heading</h6>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="text-elements">Text Elements</h3>
+              <div class="sg-example">
+                    <p>You can use the mark tag to
+                      <mark>highlight</mark> text.
+                    </p>
+                    <p>
+                      <del>This line of text is meant to be treated as deleted text.</del>
+                    </p>
+                    <p>
+                      <s>This line of text is meant to be treated as no longer accurate.</s>
+                    </p>
+                    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                    <p>
+                      <u>This line of text will render as underlined</u>
+                    </p>
+                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                    <p><strong>This line rendered as bold text.</strong></p>
+                    <p><em>This line rendered as italicized text.</em></p>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="address">Address</h3>
+              <div class="sg-example">
+                <address><strong>Twitter, Inc.</strong><br/>      795 Folsom Ave, Suite 600<br/>      San Francisco, CA 94107<br/><abbr title="Phone">P:</abbr> (123) 456-7890</address>
+                <address><strong>Full Name</strong><br/><a href="mailto:#">first.last@example.com</a></address>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="blockquote">Blockquote</h3>
+              <div class="sg-example">
+                    <blockquote class="blockquote">
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                      <footer class="blockquote-footer">Someone famous in
+                        <cite title="Source Title">Source Title</cite>
+                      </footer>
+                    </blockquote>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="code">Code</h3>
+              <div class="sg-example">For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+              </div>
+              <div class="sg-example">
+                    <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="lists">Lists</h3>
+              <div class="sg-example">
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Consectetur adipiscing elit</li>
+                      <li>Integer molestie lorem at massa</li>
+                      <li>Facilisis in pretium nisl aliquet</li>
+                      <li>Nulla volutpat aliquam velit
+                        <ul>
+                          <li>Phasellus iaculis neque</li>
+                          <li>Purus sodales ultricies</li>
+                          <li>Vestibulum laoreet porttitor sem</li>
+                          <li>Ac tristique libero volutpat at</li>
+                        </ul>
+                      </li>
+                      <li>Faucibus porta lacus fringilla vel</li>
+                      <li>Aenean sit amet erat nunc</li>
+                      <li>Eget porttitor lorem</li>
+                    </ul>
+              </div>
+              <div class="sg-example">
+                    <ol>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Consectetur adipiscing elit</li>
+                      <li>Integer molestie lorem at massa</li>
+                      <li>Facilisis in pretium nisl aliquet</li>
+                      <li>Nulla volutpat aliquam velit
+                        <ol>
+                          <li>Phasellus iaculis neque</li>
+                          <li>Purus sodales ultricies</li>
+                          <li>Vestibulum laoreet porttitor sem</li>
+                          <li>Ac tristique libero volutpat at</li>
+                        </ol>
+                      </li>
+                      <li>Faucibus porta lacus fringilla vel</li>
+                      <li>Aenean sit amet erat nunc</li>
+                      <li>Eget porttitor lorem</li>
+                    </ol>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="tables">Tables</h3>
+              <div class="sg-example">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+              <div class="sg-example">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@TwBootstrap</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="badges">Badges</h3>
+              <div class="sg-example">
+                    <h1>Example heading <span class="badge badge-default">New</span>
+                    </h1>
+                    <h2>Example heading <span class="badge badge-default">New</span>
+                    </h2>
+                    <h3>Example heading <span class="badge badge-default">New</span>
+                    </h3>
+                    <h4>Example heading <span class="badge badge-default">New</span>
+                    </h4>
+                    <h5>Example heading <span class="badge badge-default">New</span>
+                    </h5>
+                    <h6>Example heading <span class="badge badge-default">New</span>
+                    </h6>
+              </div>
+              <div class="sg-example"><span class="badge badge-default">Default</span> <span class="badge badge-primary">Primary</span> <span class="badge badge-success">Success</span> <span class="badge badge-info">Info</span> <span class="badge badge-warning">Warning</span> <span class="badge badge-danger">Danger</span>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="images">Images</h3>
+              <div class="sg-example"><img class="img-fluid" data-src="holder.js/100px250" alt="100%x250" style="height: 250px; width: 100%; display: block" data-holder-rendered="true"/>
+              </div>
+              <div class="sg-example"><img class="img-thumbnail" data-src="holder.js/200x200" alt="200x200" style="width: 200px; height: 200px" data-holder-rendered="true"/>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="figures">Figures</h3>
+              <div class="sg-example">
+                    <figure class="figure"><img class="figure-img img-fluid rounded" data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px" data-holder-rendered="true"/>
+                      <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                    </figure>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="progress">Progress bars</h3>
+              <div class="sg-example">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><br/>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><br/>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><br/>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><br/>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+              </div>
+            </div>
+            <h2 class="sg-h2" id="buttons">Buttons</h2>
+            <div class="sg-section">
+              <div class="sg-example">
+                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons-->
+                    <button class="btn btn-primary" type="button">Primary</button>
+                    <!-- Secondary, outline button-->
+                    <button class="btn btn-secondary" type="button">Secondary</button>
+                    <!-- Indicates a successful or positive action-->
+                    <button class="btn btn-success" type="button">Success</button>
+                    <!-- Contextual button for informational alert messages-->
+                    <button class="btn btn-info" type="button">Info</button>
+                    <!-- Indicates caution should be taken with this action-->
+                    <button class="btn btn-warning" type="button">Warning</button>
+                    <!-- Indicates a dangerous or potentially negative action-->
+                    <button class="btn btn-danger" type="button">Danger</button>
+                    <!-- Deemphasize a button by making it look like a link while maintaining button behavior-->
+                    <button class="btn btn-link" type="button">Link</button>
+              </div>
+              <div class="sg-example">
+                    <button class="btn btn-outline-primary" type="button">Primary</button>
+                    <button class="btn btn-outline-secondary" type="button">Secondary</button>
+                    <button class="btn btn-outline-success" type="button">Success</button>
+                    <button class="btn btn-outline-info" type="button">Info</button>
+                    <button class="btn btn-outline-warning" type="button">Warning</button>
+                    <button class="btn btn-outline-danger" type="button">Danger</button>
+              </div>
+              <div class="sg-example">
+                    <p>
+                      <button class="btn btn-primary btn-lg" type="button">Large button</button>
+                      <button class="btn btn-secondary btn-lg" type="button">Large button</button>
+                    </p>
+                    <p>
+                      <button class="btn btn-primary btn-sm" type="button">Small button</button>
+                      <button class="btn btn-secondary btn-sm" type="button">Small button</button>
+                    </p>
+              </div>
+              <div class="sg-example"><a class="btn btn-primary active" href="#" role="button" aria-pressed="true">Primary link</a> <a class="btn btn-secondary active" href="#" role="button" aria-pressed="true">Link</a> 
+                    <button class="btn btn-primary" type="button" disabled="">Primary button</button> 
+                    <button class="btn btn-secondary" type="button" disabled="">Secondary button</button> 
+              </div>
+            </div>
+            <h2 class="sg-h2" id="forms">Forms</h2>
+            <div class="sg-section">
+              <div class="sg-example">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" type="email"/><small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelect1">Example select</label>
+                        <select class="form-control" id="exampleSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelect2">Example multiple select</label>
+                        <select class="form-control" id="exampleSelect2" multiple="">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleTextarea">Example textarea</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                      </div>
+                      <fieldset class="form-group">
+                        <legend>Radio buttons</legend>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" id="optionsRadios1" name="optionsRadios" value="option1" checked="" type="radio"/>        Option one is this and that—be sure to include why it's great
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" id="optionsRadios2" name="optionsRadios" value="option2" type="radio"/>        Option two can be something else and selecting it will deselect option one
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <label class="form-check-label">
+                            <input class="form-check-input" id="optionsRadios3" name="optionsRadios" value="option3" disabled="" type="radio"/>        Option three is disabled
+                          </label>
+                        </div>
+                      </fieldset>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox"/>      Check me out
+                        </label>
+                      </div>
+                      <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+              </div>
+              <div class="sg-example">
+                    <label class="custom-file">
+                      <input class="custom-file-input" id="file" type="file"/><span class="custom-file-control"></span>
+                    </label>
+              </div>
+              <div class="sg-example">
+                    <div class="form-group has-success">
+                      <label class="form-control-label" for="inputSuccess1">Input with success</label>
+                      <input class="form-control form-control-success" id="inputSuccess1" type="text"/>
+                      <div class="form-control-feedback">Success! You've done it.</div><small class="form-text text-muted">Example help text that remains unchanged.</small>
+                    </div>
+                    <div class="form-group has-warning">
+                      <label class="form-control-label" for="inputWarning1">Input with warning</label>
+                      <input class="form-control form-control-warning" id="inputWarning1" type="text"/>
+                      <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div><small class="form-text text-muted">Example help text that remains unchanged.</small>
+                    </div>
+                    <div class="form-group has-danger">
+                      <label class="form-control-label" for="inputDanger1">Input with danger</label>
+                      <input class="form-control form-control-danger" id="inputDanger1" type="text"/>
+                      <div class="form-control-feedback">Sorry, that username's taken. Try another?</div><small class="form-text text-muted">Example help text that remains unchanged.</small>
+                    </div>
+              </div>
+            </div>
+            <h2 class="sg-h2" id="layout">Layout</h2>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="grid">12-column flexbox grid</h3>
+              <div class="sg-example">
+                    <div class="row sg-grid-example">
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                    </div>
+                    <div class="row sg-grid-example">
+                      <div class="col-md-9">.col-md-9</div>
+                      <div class="col-md-3">.col-md-3</div>
+                    </div>
+                    <div class="row sg-grid-example">
+                      <div class="col-md-4">.col-md-4</div>
+                      <div class="col-md-4">.col-md-4</div>
+                      <div class="col-md-4">.col-md-4</div>
+                    </div>
+                    <div class="row sg-grid-example">
+                      <div class="col-md-6">.col-md-6</div>
+                      <div class="col-md-6">.col-md-6</div>
+                    </div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="media-object">Media Objects</h3>
+              <div class="sg-example">
+                    <div class="media"><img class="d-flex mr-3" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px" data-holder-rendered="true"/>
+                      <div class="media-body">
+                        <h5 class="mt-0">Media object</h5>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      </div>
+                    </div>
+              </div>
+              <div class="sg-example">
+                    <div class="media"><img class="d-flex mr-3" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px" data-holder-rendered="true"/>
+                      <div class="media-body">
+                        <h5 class="mt-0">Media object</h5>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        <div class="media mt-3"><a class="d-flex pr-3" href="#"><img data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px" data-holder-rendered="true"/></a>
+                          <div class="media-body">
+                            <h5 class="mt-0">Media object</h5>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="sg-example">
+                    <div class="media">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">Media object</h5>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      </div><img class="d-flex ml-3" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px" data-holder-rendered="true"/>
+                    </div>
+              </div>
+            </div>
+            <h2 class="sg-h2" id="components">Components</h2>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="alerts">Alerts</h3>
+              <div class="sg-example">
+                    <div class="alert alert-success" role="alert"><strong>Well done!</strong> You successfully read this important alert message.</div>
+                    <div class="alert alert-info" role="alert"><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</div>
+                    <div class="alert alert-warning" role="alert"><strong>Warning!</strong> Better check yourself, you're not looking too good.</div>
+                    <div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> Change a few things up and try submitting again.</div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="breadcrumb">Breadcrumb</h3>
+              <div class="sg-example">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active">Data</li>
+                    </ol>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="cards">Cards</h3>
+              <div class="sg-example">
+                    <div class="card" style="width: 20rem"><img class="card-img-top" data-src="holder.js/318x180/" alt="318%x180" style="height: 180px; width: 100%; display: block" data-holder-rendered="true"/>
+                      <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="sg-example">
+                    <div class="card-deck">
+                      <div class="card"><img class="card-img-top" data-src="holder.js/100px200/" alt="100%x200" style="height: 200px; width: 100%; display: block" data-holder-rendered="true"/>
+                        <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="card"><img class="card-img-top" data-src="holder.js/100px200/" alt="100%x200" style="height: 200px; width: 100%; display: block" data-holder-rendered="true"/>
+                        <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="card"><img class="card-img-top" data-src="holder.js/100px200/" alt="100%x200" style="height: 200px; width: 100%; display: block" data-holder-rendered="true"/>
+                        <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="carousel">Carousel</h3>
+              <div class="sg-example">
+                <div style="max-width: 800px">
+                      <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li class="active" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                          <div class="carousel-item"><img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" data-holder-rendered="true"/></div>
+                          <div class="carousel-item"><img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" data-holder-rendered="true"/></div>
+                          <div class="carousel-item active"><img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide [800x400]" data-holder-rendered="true"/></div>
+                        </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="dropdowns">Dropdowns</h3>
+              <div class="sg-example">
+                    <div class="btn-group dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                    </div>
+                    <div class="btn-group">
+                      <button class="btn btn-secondary" type="button">Secondary</button>
+                      <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+                    <!-- /btn-group-->
+              </div>
+              <div class="sg-example">
+                    <div class="btn-group dropup">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
+                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+                    <div class="btn-group dropup">
+                      <button class="btn btn-secondary" type="button">Split dropup</button>
+                      <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                      <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="sg-example">
+                    <div class="btn-group">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">This dropdown's menu is right-aligned</button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="jumbotron">Jumbotron</h3>
+              <div class="sg-example">
+                    <div class="jumbotron">
+                      <h1 class="display-3">Hello, world!</h1>
+                      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                      <hr class="my-4"/>
+                      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                      <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                    </div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="list-groups">List groups</h3>
+              <div class="sg-example">
+                    <ul class="list-group">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+              </div>
+              <div class="sg-example">
+                    <div class="list-group"><a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action list-group-item-success" href="#">Dapibus ac facilisis in</a><a class="list-group-item list-group-item-action list-group-item-info" href="#">Cras sit amet nibh libero</a><a class="list-group-item list-group-item-action list-group-item-warning" href="#">Porta ac consectetur ac</a><a class="list-group-item list-group-item-action list-group-item-danger" href="#">Vestibulum at eros</a></div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="navbar">Navbars</h3>
+              <div class="sg-example">
+                    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Navbar</a>
+                      <div class="collapse navbar-collapse" id="navbarExample01">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                          <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                          <input class="form-control mr-sm-2" placeholder="Search" type="text"/>
+                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </nav>
+              </div>
+              <div class="sg-example">
+                    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                      <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Navbar</a>
+                      <div class="navbar-collapse collapse" id="navbarNavDropdown" aria-expanded="false">
+                        <ul class="navbar-nav">
+                          <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="navs">Navs</h3>
+              <div class="sg-example">
+                    <ul class="nav">
+                      <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                      <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                    </ul>
+              </div>
+              <div class="sg-example">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                      <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                    </ul>
+              </div>
+              <div class="sg-example">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a></li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" id="dropdown1-tab" href="#dropdown1" role="tab" data-toggle="tab" aria-controls="dropdown1">@fat</a><a class="dropdown-item" id="dropdown2-tab" href="#dropdown2" role="tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></div>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                      </div>
+                      <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                      </div>
+                      <div class="tab-pane fade" id="dropdown2" role="tabpanel" aria-labelledby="dropdown2-tab">
+                        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                      </div>
+                    </div>
+              </div>
+              <div class="sg-example">
+                    <ul class="nav nav-pills">
+                      <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                      <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="modal">Modal</h3>
+              <div class="sg-example">
+                    <div class="modal fade" id="exampleModalLive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLiveLabel">Modal title</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Woohoo, you're reading this text in a modal!</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-primary" type="button">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalLive">Launch demo modal</button>
+              </div>
+              <div class="sg-example">
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                            <button class="btn btn-primary" type="button">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalLong">Launch modal with long scrolling content</button>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="pagination">Pagination</h3>
+              <div class="sg-example">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                      </ul>
+                    </nav>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="popovers">Popovers</h3>
+              <div class="sg-example">
+                    <button class="btn btn-lg btn-danger" type="button" data-toggle="popover" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Click to toggle popover</button>
+              </div>
+              <div class="sg-example">
+                    <button class="btn btn-secondary" type="button" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Popover on top</button>
+                    <button class="btn btn-secondary" type="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Popover on right</button>
+                    <button class="btn btn-secondary" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Popover on bottom</button>
+                    <button class="btn btn-secondary" type="button" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Popover on left</button>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="scrollspy">Scrollspy</h3>
+              <style>
+                .scrollspy-example {
+                  position: relative;
+                  height: 200px;
+                  margin-top: .5rem;
+                  overflow: auto;
+                }
+                
+              </style>
+              <div class="sg-example">
+                    <nav class="navbar navbar-light bg-faded" id="navbar-example2"><a class="navbar-brand" href="#">Navbar</a>
+                      <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#fat">@fat</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mdo">@mdo</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                          <div class="dropdown-menu"><a class="dropdown-item" href="#one">one</a><a class="dropdown-item" href="#two">two</a>
+                            <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#three">three</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                    <div class="scrollspy-example" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+                      <h4 id="fat">@fat</h4>
+                      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+                      <h4 id="mdo">@mdo</h4>
+                      <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+                      <h4 id="one">one</h4>
+                      <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+                      <h4 id="two">two</h4>
+                      <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+                      <h4 id="three">three</h4>
+                      <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+                      <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.</p>
+                    </div>
+              </div>
+            </div>
+            <div class="sg-section">
+              <h3 class="sg-h3" id="tooltips">Tooltips</h3>
+              <div class="sg-example">
+                    <div class="sg-example-tooltips">
+                      <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+                      <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+                      <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+                      <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+                      <button class="btn btn-secondary" type="button" data-toggle="tooltip" data-html="true" title="&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;">Tooltip with HTML</button>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script>
+      $('body').scrollspy({ target: '#navbar-example2' })
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
