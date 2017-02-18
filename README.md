@@ -17,6 +17,8 @@ Also, create your own webpage partials and templates. For rapid prototyping, you
 
 Repository: [https://github.com/SimonPadbury/Atomic-Boot-Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug)
 
+Demo: [https://simonpadbury.github.io/Atomic-Boot-Pug/](https://simonpadbury.github.io/Atomic-Boot-Pug/)
+
 ---
 
 _Kick off your project with Atomic Boot Pug -- and then make your website look less like Bootstrap!_
