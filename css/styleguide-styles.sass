@@ -6,19 +6,70 @@
   border-bottom: .2rem solid #f0f0f0
   background-color: #ffffff
 
+// Offcanvas copied and modified from
+// `http://getbootstrap.com/docs/4.0/examples/offcanvas/`
+
+@media screen and (max-width: 767px)
+  .row-offcanvas
+    position: relative
+    transition: all .25s ease-out
+
+  .row-offcanvas-right
+    right: 0
+
+  .row-offcanvas-left
+    left: 0
+
+  .row-offcanvas-right .sidebar-offcanvas
+    // 12 columns
+    right: -100%
+
+  .row-offcanvas-right.active .sidebar-offcanvas
+    // 6 columns
+    right: -50%
+
+  .row-offcanvas-left .sidebar-offcanvas
+    // 12 columns
+    left: -100%
+
+  .row-offcanvas-left.active .sidebar-offcanvas
+    // 6 columns
+    left: -50%
+
+  .row-offcanvas-right.active
+    // 6 columns
+    right: 50%
+
+  .row-offcanvas-left.active
+    // 6 columns
+    left: 50%
+
+  .sidebar-offcanvas
+    position: absolute
+    top: 0
+    // 6 columns
+    width: 50%
+
+//
+
+[data-toggle="sg-offcanvas"]
+  @media screen and (min-width: 768px)
+    display: none
+
+@media screen and (min-width: 768px)
+  .col.sidebar-offcanvas
+    width: 200px
+
 .sg-sidebar
   margin-top: 56px
   padding-top: 20px
-  @media (max-width: 767px)
-    columns: 10rem 3
-  @media (min-width: 768px)
-    position: fixed
-    top: 0
-    height: calc(100vh - 56px)
-    border-right: .2rem solid #f7f7f7
-    overflow-y: auto
+  position: fixed
+  top: 0
+  height: calc(100vh - 56px)
+  overflow-y: auto
 
 .sg-sidebar a
+  width: 100%
   color: #888888
   font-weight: 300
 
@@ -48,7 +99,7 @@
 
 .sg-h2,
 .sg-h3
-  //- Compensating for fixed navbar
+  //- Compensating for the fixed navbar
   margin-top: -3.5rem
   padding-top: 5rem
   font-weight: 300

@@ -1,10 +1,10 @@
 # Atomic Boot Pug
 
-**v.1.0**
+**v.1.1**
 
-_Sorry, I couldn't resist the name. I've nothing against pugs, really!_
+_Sorry, I couldn't resist the name. No actual pugs were booted in the making of this repository!_
 
-Inspired by Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/), Atomic Boot Pug is comprised of a set of Bootstrap 4 demo snippets (tranformed into [Pug](https://pugjs.org/api/getting-started.html) mixins) – essentially as coped from http://v4-alpha.getbootstrap.com/. You will find these in the `pug/bootstrap-4/` folder.
+Inspired by Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/), Atomic Boot Pug is comprised of a set of Bootstrap 4 demo snippets (tranformed into [Pug](https://pugjs.org/api/getting-started.html) mixins) – essentially as coped from http://getbootstrap.com. You will find these in the `pug/bootstrap-4/` folder.
 
 The style guide sections (wrapping the Bootstrap demos and adding a header and a place for your notes) are in the `pug/styleguide/` folder.
 

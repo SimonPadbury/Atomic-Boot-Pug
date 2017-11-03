@@ -1,15 +1,16 @@
 //- Style Guide Navigation
 
-nav.navbar.navbar-toggleable-md.fixed-top.navbar-light.bg-faded
+nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-dark
+
+  button.btn.btn-outline-secondary.btn-lg.mr-2(type="button" data-toggle="sg-offcanvas")
+    i.fa.fa-ellipsis-v  Sidebar
+  
+  a.navbar-brand.mb-0.h1(href='#') Atomic Boot Pug
+
   button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarStyleGuide', aria-controls='navbarStyleGuide', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
-  a.navbar-brand(href='#') Atomic Boot Pug
+
   #navbarStyleGuide.collapse.navbar-collapse
-    ul.navbar-nav
-      li.nav-item
-        a.nav-link(href="https://github.com/SimonPadbury/Atomic-Boot-Pug")
-          i(class="fa fa-github", aria-hidden="true")
-          |  GitHub Repository
     ul.navbar-nav.ml-auto
       li.nav-item
         a.nav-link(href='#about') About
@@ -25,3 +26,7 @@ nav.navbar.navbar-toggleable-md.fixed-top.navbar-light.bg-faded
         a.nav-link(href='#layout') Layout
       li.nav-item
         a.nav-link(href='#components') Components
+    a.btn.btn-outline-primary.mr-2(href="http://getbootstrap.com" target="_blank") Bootstrap
+    a.btn.btn-outline-success(href="https://github.com/SimonPadbury/Atomic-Boot-Pug" target="_blank")
+      i.fa.fa-github(aria-hidden="true")
+      |  GitHub
