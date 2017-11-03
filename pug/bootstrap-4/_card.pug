@@ -3,7 +3,7 @@
 mixin card
   .card(style='width: 20rem;')
     img.card-img-top(data-src='holder.js/318x180/', alt='318%x180', style='height: 180px; width: 100%; display: block;', data-holder-rendered='true')
-    .card-block
+    .card-body
       h4.card-title Card title
       p.card-text
         | Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -11,7 +11,7 @@ mixin card
 
 mixin card-2
   .card
-    .card-block
+    .card-body
       h4.card-title Card title
       h6.card-subtitle.mb-2.text-muted Card subtitle
       p.card-text
@@ -29,7 +29,7 @@ mixin card-list-groups
 mixin card-kitchen-sink
   .card(style='width: 20rem;')
     img.card-img-top(data-src='holder.js/100px180/?text=Image cap', alt='Image cap [100%x180]', style='height: 180px; width: 100%; display: block;', data-holder-rendered='true')
-    .card-block
+    .card-body
       h4.card-title Card title
       p.card-text
         | Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -37,7 +37,7 @@ mixin card-kitchen-sink
       li.list-group-item Cras justo odio
       li.list-group-item Dapibus ac facilisis in
       li.list-group-item Vestibulum at eros
-    .card-block
+    .card-body
       a.card-link(href='#') Card link
       a.card-link(href='#') Another link
 
@@ -51,7 +51,7 @@ mixin card-navigation
           a.nav-link(href='#') Link
         li.nav-item
           a.nav-link.disabled(href='#') Disabled
-    .card-block
+    .card-body
       h4.card-title Special title treatment
       p.card-text With supporting text below as a natural lead-in to additional content.
       a.btn.btn-primary(href='#') Go somewhere
@@ -59,14 +59,14 @@ mixin card-navigation
 mixin card-image-caps
   .card.mb-3
     img.card-img-top(data-src='holder.js/100px180/', alt='100%x180', style='height: 180px; width: 100%; display: block;', data-holder-rendered='true')
-    .card-block
+    .card-body
       h4.card-title Card title
       p.card-text
         | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
       p.card-text
         small.text-muted Last updated 3 mins ago
   .card
-    .card-block
+    .card-body
       h4.card-title Card title
       p.card-text
         | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
@@ -86,47 +86,47 @@ mixin card-image-overlay
 
 mixin card-styles
   .card.card-inverse(style='background-color: #333; border-color: #333;')
-    .card-block
+    .card-body
       h3.card-title Special title treatment
       p.card-text With supporting text below as a natural lead-in to additional content.
       a.btn.btn-primary(href='#') Go somewhere
 
 mixin card-styles-2
   .card.card-inverse.card-primary.mb-3.text-center
-    .card-block
-      blockquote.card-blockquote
+    .card-body
+      blockquote.card-body.quote
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         footer
           | Someone famous in
           cite(title='Source Title') Source Title
   .card.card-inverse.card-success.mb-3.text-center
-    .card-block
-      blockquote.card-blockquote
+    .card-body
+      blockquote.card-body.quote
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         footer
           | Someone famous in
           cite(title='Source Title') Source Title
   .card.card-inverse.card-info.mb-3.text-center
-    .card-block
-      blockquote.card-blockquote
+    .card-body
+      blockquote.card-body.quote
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         footer
           | Someone famous in
           cite(title='Source Title') Source Title
   .card.card-inverse.card-warning.mb-3.text-center
-    .card-block
-      blockquote.card-blockquote
+    .card-body
+      blockquote.card-body.quote
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         footer
           | Someone famous in
           cite(title='Source Title') Source Title
   .card.card-inverse.card-danger.text-center
-    .card-block
-      blockquote.card-blockquote
+    .card-body
+      blockquote.card-body.quote
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         footer
@@ -137,7 +137,7 @@ mixin card-group
   .card-group
     .card
       img.card-img-top(data-src='holder.js/100px180/', alt='100%x180', style='height: 180px; width: 100%; display: block;', data-holder-rendered='true')
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text
           | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
@@ -145,14 +145,14 @@ mixin card-group
           small.text-muted Last updated 3 mins ago
     .card
       img.card-img-top(data-src='holder.js/100px180/', alt='100%x180', style='height: 180px; width: 100%; display: block;', data-holder-rendered='true')
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text This card has supporting text below as a natural lead-in to additional content.
         p.card-text
           small.text-muted Last updated 3 mins ago
     .card
       img.card-img-top(data-src='holder.js/100px180/', alt='100%x180', style='height: 180px; width: 100%; display: block;', data-holder-rendered='true')
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text
           | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
@@ -163,7 +163,7 @@ mixin card-deck
   .card-deck
     .card
       img.card-img-top(data-src='holder.js/100px200/', alt='100%x200', style='height: 200px; width: 100%; display: block;', data-holder-rendered='true')
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text
           | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
@@ -171,14 +171,14 @@ mixin card-deck
           small.text-muted Last updated 3 mins ago
     .card
       img.card-img-top(data-src='holder.js/100px200/', alt='100%x200', style='height: 200px; width: 100%; display: block;', data-holder-rendered='true')
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text This card has supporting text below as a natural lead-in to additional content.
         p.card-text
           small.text-muted Last updated 3 mins ago
     .card
       img.card-img-top(data-src='holder.js/100px200/', alt='100%x200', style='height: 200px; width: 100%; display: block;', data-holder-rendered='true')
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text
           | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
@@ -189,12 +189,12 @@ mixin card-columns
   .card-columns
     .card
       img.card-img-top.img-fluid(data-src='holder.js/100px160/', alt='100%x160', style='height: 160px; width: 100%; display: block;', data-holder-rendered='true')
-      .card-block
+      .card-body
         h4.card-title Card title that wraps to a new line
         p.card-text
           | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
     .card.p-3
-      blockquote.card-block.card-blockquote
+      blockquote.card-body.card-body.quote
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         footer
@@ -203,20 +203,20 @@ mixin card-columns
             cite(title='Source Title') Source Title
     .card
       img.card-img-top.img-fluid(data-src='holder.js/100px160/', alt='100%x160', style='height: 160px; width: 100%; display: block;', data-holder-rendered='true')
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text This card has supporting text below as a natural lead-in to additional content.
         p.card-text
           small.text-muted Last updated 3 mins ago
     .card.card-inverse.card-primary.p-3.text-center
-      blockquote.card-blockquote
+      blockquote.card-body.quote
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
         footer
           small
             | Someone famous in
             cite(title='Source Title') Source Title
     .card.text-center
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text This card has supporting text below as a natural lead-in to additional content.
         p.card-text
@@ -224,7 +224,7 @@ mixin card-columns
     .card
       img.card-img.img-fluid(data-src='holder.js/100px260/', alt='100%x260', style='height: 260px; width: 100%; display: block;', data-holder-rendered='true')
     .card.p-3.text-right
-      blockquote.card-blockquote
+      blockquote.card-body.quote
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         footer
@@ -232,7 +232,7 @@ mixin card-columns
             | Someone famous in
             cite(title='Source Title') Source Title
     .card
-      .card-block
+      .card-body
         h4.card-title Card title
         p.card-text
           | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.

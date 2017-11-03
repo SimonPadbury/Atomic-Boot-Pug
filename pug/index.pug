@@ -7,7 +7,7 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 
     //- Bootstrap CSS
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha256-rr9hHBQ43H7HSOmmNkxzQGazS/Khx+L8ZRHteEY1tQ4=", crossorigin="anonymous")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css", integrity="sha256-QUyqZrt5vIjBumoqQV0jM8CgGqscFfdGhN+nVCqX0vc=", crossorigin="anonymous")
 
     //- Font Awesome
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=", crossorigin="anonymous")
@@ -24,12 +24,15 @@ html(lang="en")
     include styleguide/__styleguide-navbar
 
     .container-fluid
-      .row
-        .col.col-md-3.col-lg-2
-          include styleguide/__styleguide-sidebar
+      .row.row-offcanvas.row-offcanvas-left
+        .col.col-md-3.col-lg-2.sidebar-offcanvas#sg-offcanvas
+          .sg-sidebar
+            include styleguide/__styleguide-sidebar
 
         .col.col-md-9.col-lg-10
           .sg-content(style="padding-bottom:3rem;")
+            
+            //- Offcanvas toggle is in `__stylefuide-navbar.pug` (left side)
 
             //- About
             h2#about.sg-h2 About
@@ -89,15 +92,36 @@ html(lang="en")
             include styleguide/_scrollspy
             include styleguide/_tooltips
 
-    //- jQuery first, then Tether, then Bootstrap JS.
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js", integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=", crossorigin="anonymous")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js", integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb", crossorigin="anonymous")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js", integrity="sha256-+kIbbrvS+0dNOjhmQJzmwe/RILR/8lb/+4+PUNVW09k=", crossorigin="anonymous")
+    //- jQuery first, then Popper, then Bootstrap JS
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
+      
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js", integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh", crossorigin="anonymous")     
+      
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js", integrity="sha256-GIa8Vh3sfESnVB2CN3rYGkD/MklvMq0lmITweQxE1qU=", crossorigin="anonymous")
+      
     script.
-      $('body').scrollspy({ target: '#navbar-example2' })
+      //-$('body').scrollspy({ target: '#navbar-example2' })
+
       $(function () {
+        'use strict'
         $('[data-toggle="popover"]').popover()
       })
+
       $(function () {
+        'use strict'
         $('[data-toggle="tooltip"]').tooltip()
       })
+
+      $(function () {
+        'use strict'
+        $('[data-toggle="sg-offcanvas"]').on('click', function () {
+          $('.row-offcanvas').toggleClass('active')
+        })
+      })
+      
+      //- Prevent dummy links causing page to jump to top
+      $('[href="#"]').on('click', function (e) {
+        e.preventDefault();
+      });
+      
