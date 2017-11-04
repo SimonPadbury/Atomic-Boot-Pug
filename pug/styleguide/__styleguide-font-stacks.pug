@@ -1,12 +1,14 @@
 .sg-section
   h3#font-stacks.sg-h3 Font Stacks
 
-  style.
-    .sg-font-primary {}
-    .sg-font-secondary {}
+  //-
+    style.
+      .sg-font-primary {}
+      .sg-font-secondary {}
 
   .sg-example
-    p.sg-font font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    //-
+    p.sg-font font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+    
+    //- Example of what you can do here:
       p.sg-font.sg-font-primary "Helvetica Neue", "Helvetica", Arial, sans-serif;
       p.sg-font.sg-font-secondary Georgia, Times, "Times New Roman", serif;
