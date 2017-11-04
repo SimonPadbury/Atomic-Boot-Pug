@@ -1,6 +1,10 @@
 # Log
 
-v.1.1 -- 3 Oct 2017
+v.1.1.1 -- 4 Nov 2017
+
+* Updates to docs to match changes to Bootstrap 4.0.0-beta-2 classes.
+
+v.1.1 -- 3 Nov 2017
 
 * Updated to Bootstrap 4.0.0-beta.2
 * As Bootstrap 4 JS changed from using Tether to using Popper, the same here.

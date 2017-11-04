@@ -1,53 +1,62 @@
-//- Badges
+//- Badge
 
-mixin badges
+mixin badge
   h1
     | Example heading
     = ' '
-    span.badge.badge-default New
+    span.badge.badge-secondary New
   h2
     | Example heading
     = ' '
-    span.badge.badge-default New
+    span.badge.badge-secondary New
   h3
     | Example heading
     = ' '
-    span.badge.badge-default New
+    span.badge.badge-secondary New
   h4
     | Example heading
     = ' '
-    span.badge.badge-default New
+    span.badge.badge-secondary New
   h5
     | Example heading
     = ' '
-    span.badge.badge-default New
+    span.badge.badge-secondary New
   h6
     | Example heading
     = ' '
-    span.badge.badge-default New
+    span.badge.badge-secondary New
 
-mixin badges-contextual-variations
-  span.badge.badge-default Default
-  = ' '
+mixin badge-contextual-variations
   span.badge.badge-primary Primary
+  = ' '
+  span.badge.badge-secondary Secondary
   = ' '
   span.badge.badge-success Success
   = ' '
-  span.badge.badge-info Info
+  span.badge.badge-danger Danger
   = ' '
   span.badge.badge-warning Warning
   = ' '
-  span.badge.badge-danger Danger
-
-mixin pill-badges
-  span.badge.badge-pill.badge-default Default
+  span.badge.badge-info Info
   = ' '
+  span.badge.badge-light Light
+  = ' '
+  span.badge.badge-dark Dark
+  = ' '
+
+mixin badge-pill
   span.badge.badge-pill.badge-primary Primary
+  = ' '
+  span.badge.badge-pill.badge-secondary Secondary
   = ' '
   span.badge.badge-pill.badge-success Success
   = ' '
-  span.badge.badge-pill.badge-info Info
+  span.badge.badge-pill.badge-danger Danger
   = ' '
   span.badge.badge-pill.badge-warning Warning
   = ' '
-  span.badge.badge-pill.badge-danger Danger
+  span.badge.badge-pill.badge-info Info
+  = ' '
+  span.badge.badge-pill.badge-light Light
+  = ' '
+  span.badge.badge-pill.badge-dark Dark

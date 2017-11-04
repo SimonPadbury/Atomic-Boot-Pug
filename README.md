@@ -1,6 +1,6 @@
 # Atomic Boot Pug
 
-**v.1.1**
+**v.1.1.1**
 
 _Sorry, I couldn't resist the name. No actual pugs were booted in the making of this repository!_
 

@@ -1,19 +1,14 @@
 //- Buttons
 
 mixin buttons
-  // Provides extra visual weight and identifies the primary action in a set of buttons
   button.btn.btn-primary(type='button') Primary
-  // Secondary, outline button
   button.btn.btn-secondary(type='button') Secondary
-  // Indicates a successful or positive action
   button.btn.btn-success(type='button') Success
-  // Contextual button for informational alert messages
-  button.btn.btn-info(type='button') Info
-  // Indicates caution should be taken with this action
-  button.btn.btn-warning(type='button') Warning
-  // Indicates a dangerous or potentially negative action
   button.btn.btn-danger(type='button') Danger
-  // Deemphasize a button by making it look like a link while maintaining button behavior
+  button.btn.btn-warning(type='button') Warning
+  button.btn.btn-info(type='button') Info
+  button.btn.btn-light(type='button') Light
+  button.btn.btn-dark(type='button') Dark
   button.btn.btn-link(type='button') Link
 
 mixin button-tags
@@ -27,9 +22,12 @@ mixin outline-buttons
   button.btn.btn-outline-primary(type='button') Primary
   button.btn.btn-outline-secondary(type='button') Secondary
   button.btn.btn-outline-success(type='button') Success
-  button.btn.btn-outline-info(type='button') Info
-  button.btn.btn-outline-warning(type='button') Warning
   button.btn.btn-outline-danger(type='button') Danger
+  button.btn.btn-outline-warning(type='button') Warning
+  button.btn.btn-outline-info(type='button') Info
+  button.btn.btn-outline-light(type='button') Light
+  button.btn.btn-outline-dark(type='button') Dark
+  button.btn.btn-outline-link(type='button') Link
 
 mixin button-sizing
   p
